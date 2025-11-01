@@ -113,7 +113,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0;
-  margin-top: -10px;
+  margin-top: -1px;
 }
 
 .logo {
@@ -125,6 +125,19 @@ header {
 
 .logo span {
   color: var(--accent);
+}
+
+.navbar .minuman img{
+  border-radius: 250px;
+  width: 100px;
+}
+
+.navbar a{
+  color: #E31837;
+}
+
+.navbar a span{
+  color: #FFCC00;
 }
 
 .nav-links {
@@ -141,11 +154,14 @@ header {
   text-decoration: none;
   color: var(--dark);
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: #E31837 ;
+  background-color: #FFCC00;
 }
 
 .hamburger {
@@ -187,11 +203,12 @@ header {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-top: 25px;
 }
 
 .about-text {
   flex: 1;
-  margin-top: 50px;
+  margin-top: -80px;
 }
 
 .about-image {
@@ -473,9 +490,17 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
+
+  header{
+    height: 20%;
+  }
+  .navbar .minuman img{
+    width: 80px;
+  }
   .about-content,
   .contact-content {
     flex-direction: column;
+    margin-top: 80px;
   }
 
   .about-image,
